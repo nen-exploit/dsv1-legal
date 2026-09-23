@@ -1,0 +1,35 @@
+name: Data request
+description: Request access to, correction of, or deletion of data held by the Kami bot.
+title: "Data request: "
+body:
+  - type: markdown
+    attributes:
+      value: "This issue is public. Do not post passwords, tokens, private messages, or other sensitive information. The operator may ask for verification before acting."
+  - type: dropdown
+    id: request
+    attributes:
+      label: Request type
+      options:
+        - Access
+        - Correction
+        - Deletion
+        - Other privacy question
+    validations:
+      required: true
+  - type: input
+    id: discord-id
+    attributes:
+      label: Discord user ID
+      description: Optional. This issue is public; if you prefer, ask the operator for a private way to provide your ID.
+  - type: input
+    id: server-id
+    attributes:
+      label: Server ID (if relevant)
+      description: Helps locate server-specific records.
+  - type: textarea
+    id: details
+    attributes:
+      label: Which bot feature or record is involved?
+      description: For example, reminders, warnings, a saved timezone, or a recovery snapshot. Keep private content out of this public issue.
+    validations:
+      required: true

@@ -1,0 +1,34 @@
+:root { color-scheme: dark; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #0e1420; color: #e9eef7; }
+* { box-sizing: border-box; }
+body { margin: 0; line-height: 1.7; }
+a { color: #a8c5ff; text-underline-offset: .2em; }
+a:hover { color: #d4e2ff; }
+.wrap { width: min(100% - 2.5rem, 860px); margin-inline: auto; }
+.site-header { border-bottom: 1px solid #2b3548; background: #131c2b; }
+.site-header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: 74px; }
+.brand { color: #fff; font-size: 1.15rem; font-weight: 750; text-decoration: none; }
+.brand span { color: #a9b6ca; font-size: .78rem; font-weight: 500; margin-left: .45rem; }
+nav { display: flex; gap: 1.3rem; }
+nav a { color: #c4cfdf; text-decoration: none; }
+nav a[aria-current] { color: #fff; border-bottom: 2px solid #7da7ff; }
+.eyebrow { color: #90b5ff; font-size: .76rem; font-weight: 750; letter-spacing: .13em; }
+h1 { font-size: clamp(2.15rem, 6vw, 3.7rem); line-height: 1.13; letter-spacing: -.035em; margin: .5rem 0 1rem; }
+h2 { font-size: 1.3rem; line-height: 1.3; margin: 2rem 0 .5rem; }
+p, li { color: #c7d1df; }
+.lead { font-size: 1.15rem; color: #d2dceb; max-width: 740px; }
+.landing { padding-block: clamp(3rem, 10vw, 7rem); }
+.cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin: 2.5rem 0; }
+.card { display: block; background: #182338; border: 1px solid #344157; border-radius: 16px; padding: 1.5rem; color: #e9eef7; text-decoration: none; }
+.card:hover { border-color: #88aaf2; background: #1d2b44; }
+.card span { color: #90b5ff; font-size: .8rem; }
+.card h2 { margin: .8rem 0 .4rem; }
+.card p { min-height: 3.5rem; }
+.card strong { color: #a8c5ff; }
+.contact { font-size: .95rem; }
+.document { padding-block: 3rem 5rem; }
+.document h2 { border-top: 1px solid #283448; padding-top: 1.4rem; }
+.document ul { padding-left: 1.4rem; }
+.document li { margin-bottom: .7rem; }
+footer { border-top: 1px solid #2b3548; padding-block: 1.4rem 2rem; color: #9aa9be; font-size: .85rem; }
+footer a { margin-left: .45rem; }
+@media (max-width: 620px) { .cards { grid-template-columns: 1fr; } .site-header .wrap { flex-wrap: wrap; padding-block: 1rem; } }
